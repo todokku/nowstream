@@ -78,7 +78,7 @@ $str='<?php'.PHP_EOL;
 @$str.='define(\'EN2DEKEY\', \''.$_GET['edkey'].'\');'.PHP_EOL;
 @$str.='define(\'EMAIL\', \''.$_GET['email'].'\');'.PHP_EOL;
 $str.='?>';
-$fp=fopen('config.php',"w"); //写方式打开文件 
+$fp=fopen('/config/config.php',"w"); //写方式打开文件 
 $message=fwrite($fp,$str); //存入内容 
 if(!$message===false){
     $sms='<div class="alert alert-green margin-top">	<span class="close rotate-hover padding-top"></span><strong>恭喜：</strong>本程序安装成功!</div>
